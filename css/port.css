@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+	font-family: Lato;
+    background-image: url('../image/portback.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+} 
+
+.name{
+	width: 100%;
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+	
+h1,
+p {
+  text-align: center; 
+  color: #921182;
+}
+
+h1{
+	font-size: 70px;
+	margin-top: 80px;
+	margin-bottom: -20px;
+}
+
+p{
+	font-size: 25px;
+	font-style: oblique;
+	
+}
+
+p span{
+	color:#663399;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+  position: absolute;
+  width: 100%;
+  top: 65%; 
+  transform: translateY(-50%);  
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #ff007f; 
+  color: #fff; 
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color:  #921182;
+}

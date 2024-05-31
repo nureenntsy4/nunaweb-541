@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+	<div class="my-contact">
+	<h2>🔗 FIND ME HERE 🔗</h2>
+        <div class="contact-icons">
+            <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+                <span>+60172954191</span>
+            </div>
+            <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+                <span>nureennatasya023@gmail.com</span>
+            </div>
+            <div class="contact-icon">
+                <a href="https://www.instagram.com/yourprofile" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="contact-icon">
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+	
+	<div class="your-contact">
+	<h2>🌐 LET'S STAY IN TOUCH 🌐</h2>
+	<form id="contactForm">
+		<label for="name">Name : </label>
+		<input type="text" id="name">
+		<span id="nameError" class="error"></span>
+		
+		<label for="email">Email : </label>
+		<input type="text" id="email">
+		<span id="emailError" class="error"></span>
+		
+		<label for="message">Message : </label>
+		<input type="text" id="message">
+		<span id="messageError" class="error"></span>
+		
+		<div class="center">
+			<input type="submit" value="Send Message">
+			<p id="success"></p>
+		</div>
+	</form>
+	</div>
+	
+	<script src="js/contact.js"></script>
+	
+</body>
+</html>

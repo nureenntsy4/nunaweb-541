@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url('../image/indexback.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+} 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+	margin-top: 30px;
+	color: #1338be;
+}
+
+h1 span{
+	color: #cc5500;
+}
+
+.typing {
+    overflow: hidden;
+	border-right: 2px solid #1338be;
+    white-space: nowrap; 
+}
+
+.typing-animation {
+    animation: typing 3s steps(40) infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+	50% {
+        border-right: 2px solid transparent;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.typing-animation span {
+    color: #cc5500; 
+}
+
+.oval-button {
+    display: inline-block;
+    background-color: #ff9800; 
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px; 
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.oval-button:hover {
+    background-color: #fff; 
+    color: #ff9800; 
+}

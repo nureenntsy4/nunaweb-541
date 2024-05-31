@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Days</title>
+    <link rel="stylesheet" href="css/datecalc.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>【┘】 <span>COUNTING DAYS AND BEYOND</span> 【┘】</h1>
+        <label for="startDate">First Meet :</label>
+        <input type="date" id="startDate">
+        <br>
+        <label for="endDate">Latest Meet :</label>
+        <input type="date" id="endDate">
+        <br>
+        <button onclick="calculateDifference()">Calculate Our Days !</button>
+		<br><br><br>
+		<h3> WE HAVE BEEN <span>FRIENDS</span> FOR</h3>
+        <div id="result">
+			<div class="result-box">
+				<span class="result-number" id="years">-</span>
+				<span class="result-label">Years</span>
+			</div>
+			
+			<div class="result-box">
+				<span class="result-number" id="months">-</span>
+				<span class="result-label">Months</span>
+			</div>
+			
+			<div class="result-box">
+				<span class="result-number" id="days">-</span>
+				<span class="result-label">Days</span>
+			</div>
+		
+		</div>
+    </div>
+
+    <script>
+	function calculateDifference() {
+    const startDate = new Date(document.getElementById('startDate').value);
+    const endDate = new Date(document.getElementById('endDate').value);
+
+    const timeDifference = endDate.getTime() - startDate.getTime();
+    const dayDifference = Math.floor(timeDifference / (1000 * 3600 * 24));
+
+    const years = Math.floor(dayDifference / 365);
+    const months = Math.floor((dayDifference % 365) / 30);
+    const days = Math.floor((dayDifference % 365) % 30);
+
+    document.getElementById('years').textContent = years;
+    document.getElementById('months').textContent = months;
+    document.getElementById('days').textContent = days;
+}
+
+
+	</script>
+</body>
+</html>

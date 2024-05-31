@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url('../image/indexback.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    border: 5px;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.text-content h1, .text-content h1 span {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.text-content h1 span {
+    font-size: 3em;
+    color: #1338be;
+}
+
+.text-content h1 {
+    font-size: 2em;
+    color: #cc5500;
+}
+
+.text-content p {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.text-content p span {
+    color: inherit;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    background-color: transparent; 
+}
+
+.text-content p span:hover {
+    color: #ffffff; 
+    background-color: #1338be; 
+}
+
+.loading-dots {
+    display: inline-block;
+    font-size: 1.2em;
+    position: relative;
+}
+
+.loading-dots::before, .loading-dots::after {
+    content: '';
+    display: inline-block;
+    animation: loading-dots 1.5s infinite steps(3, end);
+}
+
+.loading-dots::before {
+    content: '.';
+    animation-delay: 0s;
+}
+
+.loading-dots::after {
+    content: '..';
+    animation-delay: 0.5s;
+}
+
+@keyframes loading-dots {
+    0%, 20% {
+        color: transparent;
+    }
+    40% {
+        color: #007bff;
+    }
+    100% {
+        color: transparent;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation</title>
+    <link rel="stylesheet" href="css/reco.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+	<body>
+	<div class="overlay"></div>
+		<div class="container">
+			<h1>♫⋆｡♪ ₊˚♬ ﾟ<span> MUSIC MAKES ONE </span> ♫⋆｡♪ ₊˚♬ ﾟ</h1>
+			<center>
+				<p>Having a huge believe in music can connect people regardless the language, <br><span>I welcome you to plug in your favourite songs !</span></p>
+			</center>
+
+        <form id="songForm" method="post">
+		
+			<label for="song_lang">Song Language:</label>
+            <input type="text" id="song_lang" name="song_lang" required>
+			
+            <label for="song_title">Song Title:</label>
+            <input type="text" id="song_title" name="song_title" required>
+
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" name="artist" required>
+
+            <label for="genre">Genre:</label>
+            <select id="genre" name="genre" required>
+                <option value="">Select Genre</option>
+                <option value="Pop">Pop</option>
+                <option value="Ballad">Ballad</option>
+                <option value="Hip Hop">Hip Hop</option>
+				<option value="R&B">RNB</option>
+            </select>
+
+            <label>Would you like to recommend this to a stranger:</label>
+            <label><input type="radio" name="recommend" value="Yes" required> Yes</label>
+            <label><input type="radio" name="recommend" value="No" required> No</label>
+
+            <label for="description">Description (optional):</label>
+            <textarea id="description" name="description" rows="4"></textarea>
+			<br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+	
+	<script src="js/reco.js"></script>
+
+	</body>
+</html>

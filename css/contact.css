@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url('../image/indexback.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.my-contact, .your-contact {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    color: #1338be;
+}
+
+.my-contact {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; 
+    width: 80%; 
+    max-width: 600px; 
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+    color: #ff9800;
+}
+
+.contact-icon a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-icon i {
+    font-size: 24px;
+}
+
+.your-contact {
+    margin-top: 5px; 
+    padding-top: 0; 
+}
+
+.your-contact h2 {
+    margin-top: 40px; 
+}
+
+form {
+    margin-top: 5px;
+}
+
+form label {
+    color: #cc5500;
+    display: block;
+    margin-top: 5px;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+form input[type="submit"] {
+    background-color: #cc5500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1338be;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+#success {
+    color: green;
+    font-size: 14px;
+    display: none;
+}
